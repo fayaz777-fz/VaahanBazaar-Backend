@@ -20,7 +20,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 // Security and performance middleware
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://yourdomain.com'] 
+    ? ['https://vaahanbazaar-backend.onrender.com'] 
     : ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:3000'],
   credentials: true
 }));
